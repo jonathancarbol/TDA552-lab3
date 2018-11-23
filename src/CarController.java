@@ -45,8 +45,8 @@ public class CarController {
         public void actionPerformed(ActionEvent e) {
             for (Car car : cars) {
                 car.move();
-                int x = (int) Math.round(car.getPosition().getX());
-                int y = (int) Math.round(car.getPosition().getY());
+                int x = (int) Math.round(car.getPosition().x);
+                int y = (int) Math.round(car.getPosition().y);
                 frame.drawPanel.moveit(x, y);
                 // repaint() calls the paintComponent method of the panel
                 frame.drawPanel.repaint();
@@ -60,6 +60,25 @@ public class CarController {
         for (Car car : cars
         ) {
             car.gas(gas);
+        }
+    }
+
+    void startEngine(){
+        for (Car car : cars){
+            car.startEngine();
+        }
+    }
+
+    void stopEngine(){
+        for (Car car : cars) {
+            car.stopEngine();
+        }
+    }
+
+    void brake(int amount) {
+        double brake = ((double) amount) / 100;
+        for (Car car : cars){
+            car.brake(brake);
         }
     }
 }

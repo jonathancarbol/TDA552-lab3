@@ -23,20 +23,20 @@ public class ScaniaTest {
     @Test
     public void setFlatBedAngle() {
         s.getFlatBed().setFlatBedAngle(0,0);
-        assertEquals(0, s.getFlatBedAngle());
+        assertEquals(0, s.getFlatBed().getFlatBedAngle());
         s.getFlatBed().setFlatBedAngle(50,0);
-        assertEquals(50,s.getFlatBedAngle());
+        assertEquals(50,s.getFlatBed().getFlatBedAngle());
         s.getFlatBed().setFlatBedAngle(100,0);
-        assertEquals(50,s.getFlatBedAngle());
+        assertEquals(50,s.getFlatBed().getFlatBedAngle());
 
         s.setCurrentSpeed(2);
-        s.getFlatBed().setFlatBedAngle(0,0);
-        assertEquals(50,s.getFlatBedAngle());
+        s.getFlatBed().setFlatBedAngle(0,s.getCurrentSpeed());
+        assertEquals(50,s.getFlatBed().getFlatBedAngle());
     }
 
     @Test
     public void getFlatBedAngle() {
         s.getFlatBed().setFlatBedAngle(20,0);
-        assertEquals(20, s.getFlatBedAngle());
+        assertEquals(20, s.getFlatBed().getFlatBedAngle());
     }
 }

@@ -2,7 +2,7 @@ import java.awt.*;
 
 public class Scania extends Transport {
 
-    private int flatBedAngle;
+    //private int flatBedAngle;
 
 
     /**
@@ -10,7 +10,7 @@ public class Scania extends Transport {
      */
     public Scania() {
         super(80, Color.MAGENTA, "ScaniaGSleeper", new FlatBed());
-        this.flatBedAngle = 0;
+        //this.flatBedAngle = 0;
     }
 
 
@@ -32,12 +32,12 @@ public class Scania extends Transport {
         }
     }*/
 
+/*
     /**
      * Returns the current angle of the flat bed.
      * @return flatBedAngle
-     */
 
     public int getFlatBedAngle() {
-        return flatBedAngle;
-    }
+        return getFlatBed().getFlatBedAngle();
+    }*/
 }
