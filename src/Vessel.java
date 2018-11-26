@@ -31,7 +31,7 @@ public abstract class Vessel implements Movable {
         this.color = color;
         this.modelName = modelName;
         this.position = new Point(0,0);
-        this.direction = new int[]{0,1};
+        this.direction = new int[]{1,0};
         stopEngine();
     }
 

@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d1f27a0-f1dd-4162-87ec-5410d45eb607" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/CarController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/CarController$TimerListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/CarController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/CarView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/CarView$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/Scania.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laboration 1/Scania.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/ScaniaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laboration 1/ScaniaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/CarController$TimerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laboration 1/CarController$TimerListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/CarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laboration 1/CarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/CarView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laboration 1/CarView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/DrawPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laboration 1/DrawPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/Vessel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laboration 1/Vessel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/VesselTest$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laboration 1/VesselTest$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Laboration 1/VesselTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Laboration 1/VesselTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/CarView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scania.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scania.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ScaniaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScaniaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DrawPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DrawPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Vessel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Vessel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VesselTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VesselTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -144,29 +143,30 @@
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="25" />
+          <entry key="java" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="25" />
+          <entry key="JAVA" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="520" />
+          <entry key="java" value="1508" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="520" />
+          <entry key="JAVA" value="1508" />
         </counts>
       </usages-collector>
     </session>
@@ -176,8 +176,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CarController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
+            <state relative-caret-position="418">
+              <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -186,10 +186,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Saab95.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Vessel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-738">
-              <caret line="166" column="67" selection-start-line="166" selection-start-column="67" selection-end-line="166" selection-end-column="67" />
+            <state relative-caret-position="-551">
+              <caret line="109" column="7" lean-forward="true" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -200,16 +209,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CarView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+            <state relative-caret-position="248">
+              <caret line="134" column="31" selection-start-line="134" selection-start-column="31" selection-end-line="134" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2299#2300#0" expanded="true" />
                 <element signature="e#2385#2386#0" expanded="true" />
-                <element signature="e#4090#4091#0" expanded="true" />
-                <element signature="e#4125#4126#0" expanded="true" />
-                <element signature="e#4300#4301#0" expanded="true" />
-                <element signature="e#4344#4345#0" expanded="true" />
+                <element signature="e#4502#4503#0" expanded="true" />
+                <element signature="e#4553#4554#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -218,8 +225,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -260,7 +267,6 @@
         <option value="$PROJECT_DIR$/src/Volvo240.java" />
         <option value="$PROJECT_DIR$/src/Car.java" />
         <option value="$PROJECT_DIR$/src/Ferry.java" />
-        <option value="$PROJECT_DIR$/src/VesselTest.java" />
         <option value="$PROJECT_DIR$/src/Ramp.java" />
         <option value="$PROJECT_DIR$/src/CarTransport.java" />
         <option value="$PROJECT_DIR$/src/CarTest.java" />
@@ -269,14 +275,15 @@
         <option value="$PROJECT_DIR$/src/FerryTest.java" />
         <option value="$PROJECT_DIR$/src/Truck4Cars.java" />
         <option value="$PROJECT_DIR$/src/Truck4CarsTest.java" />
-        <option value="$PROJECT_DIR$/src/DrawPanel.java" />
         <option value="$PROJECT_DIR$/src/FlatBed.java" />
         <option value="$PROJECT_DIR$/src/Transport.java" />
         <option value="$PROJECT_DIR$/src/Scania.java" />
         <option value="$PROJECT_DIR$/src/ScaniaTest.java" />
         <option value="$PROJECT_DIR$/src/Vessel.java" />
-        <option value="$PROJECT_DIR$/src/CarController.java" />
+        <option value="$PROJECT_DIR$/src/VesselTest.java" />
+        <option value="$PROJECT_DIR$/src/DrawPanel.java" />
         <option value="$PROJECT_DIR$/src/CarView.java" />
+        <option value="$PROJECT_DIR$/src/CarController.java" />
       </list>
     </option>
   </component>
@@ -292,7 +299,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,6 +320,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
@@ -323,7 +330,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542980917068" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543220616192" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -357,58 +364,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScaniaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VesselTest.getDirection" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Laboration 1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScaniaTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScaniaTest.getFlatBedAngle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Laboration 1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScaniaTest" />
-      <option name="METHOD_NAME" value="getFlatBedAngle" />
+      <option name="MAIN_CLASS_NAME" value="VesselTest" />
+      <option name="METHOD_NAME" value="getDirection" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScaniaTest.setFlatBedAngle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VesselTest.move" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Laboration 1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ScaniaTest" />
-      <option name="METHOD_NAME" value="setFlatBedAngle" />
+      <option name="MAIN_CLASS_NAME" value="VesselTest" />
+      <option name="METHOD_NAME" value="move" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransportTest.setRampUp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VesselTest.turnLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Laboration 1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TransportTest" />
-      <option name="METHOD_NAME" value="setRampUp" />
+      <option name="MAIN_CLASS_NAME" value="VesselTest" />
+      <option name="METHOD_NAME" value="turnLeft" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VesselTest.turnRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Laboration 1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="VesselTest" />
+      <option name="METHOD_NAME" value="turnRight" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TransportTest.setRampUp" />
-      <item itemvalue="JUnit.ScaniaTest.setFlatBedAngle" />
-      <item itemvalue="JUnit.ScaniaTest" />
-      <item itemvalue="JUnit.ScaniaTest.getFlatBedAngle" />
+      <item itemvalue="JUnit.VesselTest.move" />
+      <item itemvalue="JUnit.VesselTest.turnLeft" />
+      <item itemvalue="JUnit.VesselTest.turnRight" />
+      <item itemvalue="JUnit.VesselTest.getDirection" />
       <item itemvalue="Application.CarController" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.CarController" />
-        <item itemvalue="JUnit.ScaniaTest.getFlatBedAngle" />
-        <item itemvalue="JUnit.ScaniaTest.setFlatBedAngle" />
-        <item itemvalue="JUnit.ScaniaTest" />
-        <item itemvalue="JUnit.TransportTest.setRampUp" />
+        <item itemvalue="JUnit.VesselTest.getDirection" />
+        <item itemvalue="JUnit.VesselTest.turnRight" />
+        <item itemvalue="JUnit.VesselTest.turnLeft" />
+        <item itemvalue="JUnit.VesselTest.move" />
       </list>
     </recent_temporary>
   </component>
@@ -426,35 +435,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ScaniaTest_setFlatBedAngle - 2018.11.23 at 13h 49m 35s.xml">
-      <configuration name="ScaniaTest.setFlatBedAngle" configurationId="JUnit" />
+    <history-entry file="VesselTest_move - 2018.11.26 at 08h 32m 26s.xml">
+      <configuration name="VesselTest.move" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScaniaTest - 2018.11.23 at 13h 58m 13s.xml">
-      <configuration name="ScaniaTest" configurationId="JUnit" />
+    <history-entry file="VesselTest_turnLeft - 2018.11.26 at 08h 32m 33s.xml">
+      <configuration name="VesselTest.turnLeft" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScaniaTest - 2018.11.23 at 14h 11m 03s.xml">
-      <configuration name="ScaniaTest" configurationId="JUnit" />
+    <history-entry file="VesselTest_turnLeft - 2018.11.26 at 08h 32m 56s.xml">
+      <configuration name="VesselTest.turnLeft" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScaniaTest - 2018.11.23 at 14h 12m 45s.xml">
-      <configuration name="ScaniaTest" configurationId="JUnit" />
+    <history-entry file="VesselTest_turnLeft - 2018.11.26 at 08h 33m 05s.xml">
+      <configuration name="VesselTest.turnLeft" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScaniaTest_setFlatBedAngle - 2018.11.23 at 14h 13m 29s.xml">
-      <configuration name="ScaniaTest.setFlatBedAngle" configurationId="JUnit" />
+    <history-entry file="VesselTest_turnLeft - 2018.11.26 at 08h 33m 17s.xml">
+      <configuration name="VesselTest.turnLeft" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScaniaTest_setFlatBedAngle - 2018.11.23 at 14h 14m 43s.xml">
-      <configuration name="ScaniaTest.setFlatBedAngle" configurationId="JUnit" />
+    <history-entry file="VesselTest_turnRight - 2018.11.26 at 08h 33m 21s.xml">
+      <configuration name="VesselTest.turnRight" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScaniaTest_setFlatBedAngle - 2018.11.23 at 14h 16m 14s.xml">
-      <configuration name="ScaniaTest.setFlatBedAngle" configurationId="JUnit" />
+    <history-entry file="VesselTest_turnRight - 2018.11.26 at 08h 33m 36s.xml">
+      <configuration name="VesselTest.turnRight" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScaniaTest_setFlatBedAngle - 2018.11.23 at 14h 18m 30s.xml">
-      <configuration name="ScaniaTest.setFlatBedAngle" configurationId="JUnit" />
+    <history-entry file="VesselTest_turnRight - 2018.11.26 at 08h 33m 50s.xml">
+      <configuration name="VesselTest.turnRight" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScaniaTest_setFlatBedAngle - 2018.11.23 at 14h 19m 17s.xml">
-      <configuration name="ScaniaTest.setFlatBedAngle" configurationId="JUnit" />
+    <history-entry file="VesselTest_getDirection - 2018.11.26 at 08h 33m 57s.xml">
+      <configuration name="VesselTest.getDirection" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ScaniaTest_getFlatBedAngle - 2018.11.23 at 14h 19m 35s.xml">
-      <configuration name="ScaniaTest.getFlatBedAngle" configurationId="JUnit" />
+    <history-entry file="VesselTest_getDirection - 2018.11.26 at 08h 38m 11s.xml">
+      <configuration name="VesselTest.getDirection" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -468,13 +477,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2181208" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.22147651" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.32885906" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32885906" />
@@ -482,7 +492,7 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.32885906" />
+      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.32885906" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -534,13 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Saab95.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ferry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -571,23 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/VesselTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CarTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -644,9 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#216#217#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -654,9 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#197#198#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -686,10 +670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/VesselTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="1258">
+          <caret line="114" column="22" selection-start-line="114" selection-start-column="22" selection-end-line="114" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -698,8 +682,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Vessel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-738">
-          <caret line="166" column="67" selection-start-line="166" selection-start-column="67" selection-end-line="166" selection-end-column="67" />
+        <state relative-caret-position="-551">
+          <caret line="109" column="7" lean-forward="true" selection-start-line="109" selection-start-column="7" selection-end-line="109" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DrawPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -708,24 +702,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CarView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="248">
+          <caret line="134" column="31" selection-start-line="134" selection-start-column="31" selection-end-line="134" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2299#2300#0" expanded="true" />
             <element signature="e#2385#2386#0" expanded="true" />
-            <element signature="e#4090#4091#0" expanded="true" />
-            <element signature="e#4125#4126#0" expanded="true" />
-            <element signature="e#4300#4301#0" expanded="true" />
-            <element signature="e#4344#4345#0" expanded="true" />
+            <element signature="e#4502#4503#0" expanded="true" />
+            <element signature="e#4553#4554#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Saab95.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CarController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
+        <state relative-caret-position="418">
+          <caret line="112" column="4" selection-start-line="112" selection-start-column="4" selection-end-line="112" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

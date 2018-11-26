@@ -56,8 +56,8 @@ public class VesselTest {
 
     @org.junit.Test
     public void getDirection() {
-        assertEquals(0, v.getDirection()[0]);
-        assertEquals(1, v.getDirection()[1]);
+        assertEquals(1, v.getDirection()[0]);
+        assertEquals(0, v.getDirection()[1]);
     }
 
     @org.junit.Test
@@ -88,31 +88,31 @@ public class VesselTest {
     public void move() {
         v.incrementSpeed(2);
         v.move();
-        assertEquals(0, v.getPosition().x);
-        assertEquals(2, v.getPosition().y);
+        assertEquals(2, v.getPosition().x);
+        assertEquals(0, v.getPosition().y);
     }
 
 
     @org.junit.Test
     public void turnLeft() {
         v.turnLeft();
-        assertEquals(-1, v.getDirection()[0]);
-        assertEquals(0, v.getDirection()[1]);
+        assertEquals(0, v.getDirection()[0]);
+        assertEquals(1, v.getDirection()[1]);
 
         v.turnLeft();
-        assertEquals(0, v.getDirection()[0]);
-        assertEquals(-1, v.getDirection()[1]);
+        assertEquals(-1, v.getDirection()[0]);
+        assertEquals(0, v.getDirection()[1]);
     }
 
     @org.junit.Test
     public void turnRight() {
         v.turnRight();
-        assertEquals(1,v.getDirection()[0]);
-        assertEquals(0, v.getDirection()[1]);
+        assertEquals(0,v.getDirection()[0]);
+        assertEquals(-1, v.getDirection()[1]);
 
         v.turnRight();
-        assertEquals(0, v.getDirection()[0]);
-        assertEquals(-1, v.getDirection()[1]);
+        assertEquals(-1, v.getDirection()[0]);
+        assertEquals(0, v.getDirection()[1]);
     }
 
     @org.junit.Test
