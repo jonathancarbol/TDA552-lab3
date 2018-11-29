@@ -2,25 +2,51 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import javax.imageio.ImageIO;
 import javax.swing.*;
+
+
 
 // This panel represent the animated part of the view with the car images.
 
 public class DrawPanel extends JPanel{
 
+    private List<DrawCar> dC = new ArrayList<>();
+    private HashMap<BufferedImage, Point> BP;
+
     // Just a single image, TODO: Generalize
+
+
     BufferedImage volvoImage;
     BufferedImage saabImage;
     BufferedImage scaniaImage;
+
+
+    void addList(){
+        DrawCar Volvo240 = new DrawCar(volvoImage, new Point(), "Volvo240");
+        DrawCar Saab95 = new DrawCar(saabImage, new Point(),"Saab95");
+        DrawCar Scania = new DrawCar(scaniaImage, new Point(),"ScaniaGSleeper");
+        dC.add(Volvo240);
+        dC.add(Saab95);
+        dC.add(Scania);
+    }
     // To keep track of a singel cars position
-    Point volvoPoint = new Point();
+   /* Point volvoPoint = new Point();
     Point saabPoint = new Point();
     Point scaniaPoint = new Point();
-
+*/
     // TODO: Make this genereal for all cars
     void moveit(int x, int y, String modelName){
-        if (modelName.equals("Saab95")){
+        for (int i = 0; i < dC.size(); i++){
+            if (modelName.equals(dC.get(i).getName())){
+                dC.get(i).getP().x = x;
+                dC.get(i).getP().y = y;
+            }
+        }
+        /*if (modelName.equals("Saab95")){
             saabPoint.x = x;
             saabPoint.y = y;
         }else if (modelName.equals("Volvo240")) {
@@ -29,7 +55,7 @@ public class DrawPanel extends JPanel{
         } else {
             scaniaPoint.x = x;
             saabPoint.y = y;
-        }
+        }*/
     }
 
     // Initializes the panel and reads the images
@@ -51,6 +77,7 @@ public class DrawPanel extends JPanel{
         {
             ex.printStackTrace();
         }
+        addList();
 
     }
 
@@ -59,8 +86,14 @@ public class DrawPanel extends JPanel{
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(volvoImage, volvoPoint.x, volvoPoint.y, null); // see javadoc for more info on the parameters
+        int offset = 0;
+
+        for (int i = 0; i < dC.size(); i++){
+            g.drawImage(dC.get(i).getB(),dC.get(i).getP().x,dC.get(i).getP().y+offset,null);
+            offset = offset+100;
+        }
+       /* g.drawImage(volvoImage, volvoPoint.x, volvoPoint.y, null); // see javadoc for more info on the parameters
         g.drawImage(saabImage, saabPoint.x, volvoPoint.y +100, null);
-        g.drawImage(scaniaImage, scaniaPoint.x, scaniaPoint.y +200,null);
+        g.drawImage(scaniaImage, scaniaPoint.x, scaniaPoint.y +200,null);*/
     }
 }

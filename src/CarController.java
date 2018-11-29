@@ -38,6 +38,7 @@ public class CarController {
         // Start a new view and send a reference of self
         cc.frame = new CarView("CarSim 1.0", cc);
 
+
         // Start the timer
         cc.timer.start();
     }
@@ -52,18 +53,26 @@ public class CarController {
                 int x = (int) Math.round(car.getPosition().x);
                 int y = (int) Math.round(car.getPosition().y);
 
-                if (x > 683){
-                    car.stopEngine();
+                if (x > 674){
+                    //car.stopEngine();
                     car.turnLeft();
                     car.turnLeft();
-                    car.setPosition(new Point(682,y));
-                    car.startEngine();
+                    //car.setPosition(new Point(640,y));
+                    //car.move();
+                    if(car.getDirection() == new int[] {-1,0}) {
+                        car.startEngine();
+                        car.gas(0.01);
+                    }
                 }else if (x < 0){
-                    car.stopEngine();
+                    //car.stopEngine();
                     car.turnLeft();
                     car.turnLeft();
-                    car.setPosition(new Point(1,y));
-                    car.startEngine();
+                    //car.setPosition(new Point(5,y));
+                    //car.move();
+                    if(car.getDirection() == new int[] {1,0}) {
+                        car.startEngine();
+                        car.gas(0.01);
+                    }
                 }
                 //out.println(car.getModelName());
                 //out.println(car.getCurrentSpeed());
@@ -77,8 +86,7 @@ public class CarController {
     // Calls the gas method for each car once
     void gas(int amount) {
         double gas = ((double) amount) / 100;
-        for (Vessel car : cars
-        ) {
+        for (Vessel car : cars) {
             car.gas(gas);
         }
     }
@@ -110,5 +118,28 @@ public class CarController {
         }
     }
 
+    void turboOff() {
+        for (Vessel car : cars){
+            if (car.getModelName().equals("Saab95")){
+                ((Saab95) car).setTurboOff();
+            }
+        }
+    }
+
+    void liftBed() {
+        for (Vessel car : cars){
+            if (car.getModelName().equals("ScaniaGSleeper")){
+                ((Scania) car).getFlatBed().setFlatBedAngle(70,car.getCurrentSpeed());
+            }
+        }
+    }
+
+    void lowerBed() {
+        for (Vessel car : cars){
+            if (car.getModelName().equals("ScaniaGSleeper")){
+                ((Scania) car).getFlatBed().setFlatBedAngle(0,car.getCurrentSpeed());
+            }
+        }
+    }
 
 }

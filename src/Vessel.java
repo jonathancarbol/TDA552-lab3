@@ -18,6 +18,7 @@ public abstract class Vessel implements Movable {
     private Color color; // Color of the car
     private String modelName; // The car model name
     private double currentSpeed; // The current speed of the car
+    private double[] position2;
     private Point position; // The current position of the car
     private int[] direction; // The direction of the care (where index 0 is the x-direction and index 1 is the y direction)
 
@@ -31,6 +32,7 @@ public abstract class Vessel implements Movable {
         this.color = color;
         this.modelName = modelName;
         this.position = new Point(0,0);
+        this.position2 = new double[]{1,0};
         this.direction = new int[]{1,0};
         stopEngine();
     }
@@ -143,6 +145,13 @@ public abstract class Vessel implements Movable {
         return 1.0;
     }
 
+    public double[] getPosition2() {
+        return position2;
+    }
+
+    public void setPosition2(double[] position2) {
+        this.position2 = position2;
+    }
 
     /**
      * Increases the currentSpeed of the car with an increment amount.
@@ -164,8 +173,12 @@ public abstract class Vessel implements Movable {
      * Changes the position of the car based on its current position and direction.
      */
     public void move() {
-        position.x = (int) (getCurrentSpeed() * direction[0] + 0.5) + position.x;
-        position.y = (int) (getCurrentSpeed() * direction[1] + 0.5) + position.y;
+
+        position2[0] = getCurrentSpeed() * direction[0] + position2[0];
+        position2[1] = getCurrentSpeed() * direction[1] + position2[1];
+
+        position.x = (int) position2[0];
+        position.y = (int) position2[1];
     }
 
     /**
