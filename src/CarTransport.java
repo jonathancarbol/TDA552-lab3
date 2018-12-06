@@ -8,7 +8,7 @@ import static java.lang.Math.abs;
  * The CarTransport class which extends the Transport class, and adds methods for loading cars and moving them
  * along with the car transport.
  */
-public abstract class CarTransport extends Transport{
+public abstract class CarTransport extends Transport {
 
     private int maxCars;
     private int maxWeightCar;
@@ -59,21 +59,4 @@ public abstract class CarTransport extends Transport{
             getCarsLoaded().get(i).setPosition(getPosition());
         }
     }
-
-    /**
-     * Moves the car as well as all the cars loaded unto the car transport.
-     */
-    /*@Override
-    public void moveAll() {
-        *//*Transport t = new Transport(100, Color.BLACK, "InterimVessel", new Ramp());
-        t.setCurrentSpeed(this.getCurrentSpeed());
-        t.setPosition(this.getPosition());
-        t.setDirection(this.getDirection());*//*
-        move();
-
-        //setPosition(t.getPosition());
-        for (int i = 0; i < getCarsLoaded().size(); i++){
-            getCarsLoaded().get(i).setPosition(getPosition());
-        }
-    }*/
 }

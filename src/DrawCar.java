@@ -3,37 +3,37 @@ import java.awt.image.BufferedImage;
 
 public class DrawCar {
 
-    private BufferedImage b;
-    private Point p;
+    private BufferedImage image;
+    private Point point;
     private String name;
 
-    public DrawCar(BufferedImage b, Point p, String name) {
-        this.b = b;
-        this.p = p;
+    public DrawCar(BufferedImage image, Point point, String name) {
+        this.image = image;
+        this.point = point;
         this.name = name;
     }
 
-    public BufferedImage getB() {
-        return b;
+    BufferedImage getImage() {
+        return image;
     }
 
-    public void setB(BufferedImage b) {
-        this.b = b;
+    void setB(BufferedImage image) {
+        this.image = image;
     }
 
-    public Point getP() {
-        return p;
+    Point getPoint() {
+        return point;
     }
 
-    public void setP(Point p) {
-        this.p = p;
+    void setPoint(Point point) {
+        this.point = point;
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
     }
 }

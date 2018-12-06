@@ -3,59 +3,35 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import javax.imageio.ImageIO;
 import javax.swing.*;
-
-
 
 // This panel represent the animated part of the view with the car images.
 
 public class DrawPanel extends JPanel{
 
-    private List<DrawCar> dC = new ArrayList<>();
-    private HashMap<BufferedImage, Point> BP;
-
-    // Just a single image, TODO: Generalize
-
-
-    BufferedImage volvoImage;
-    BufferedImage saabImage;
-    BufferedImage scaniaImage;
-
+    private List<DrawCar> drawCars = new ArrayList<>();
+    private BufferedImage volvoImage;
+    private BufferedImage saabImage;
+    private BufferedImage scaniaImage;
 
     void addList(){
         DrawCar Volvo240 = new DrawCar(volvoImage, new Point(), "Volvo240");
         DrawCar Saab95 = new DrawCar(saabImage, new Point(),"Saab95");
         DrawCar Scania = new DrawCar(scaniaImage, new Point(),"ScaniaGSleeper");
-        dC.add(Volvo240);
-        dC.add(Saab95);
-        dC.add(Scania);
+        drawCars.add(Volvo240);
+        drawCars.add(Saab95);
+        drawCars.add(Scania);
     }
-    // To keep track of a singel cars position
-   /* Point volvoPoint = new Point();
-    Point saabPoint = new Point();
-    Point scaniaPoint = new Point();
-*/
     // TODO: Make this genereal for all cars
     void moveit(int x, int y, String modelName){
-        for (int i = 0; i < dC.size(); i++){
-            if (modelName.equals(dC.get(i).getName())){
-                dC.get(i).getP().x = x;
-                dC.get(i).getP().y = y;
+        for (int i = 0; i < drawCars.size(); i++){
+            if (modelName.equals(drawCars.get(i).getName())){
+                drawCars.get(i).getPoint().x = x;
+                drawCars.get(i).getPoint().y = y;
             }
         }
-        /*if (modelName.equals("Saab95")){
-            saabPoint.x = x;
-            saabPoint.y = y;
-        }else if (modelName.equals("Volvo240")) {
-            volvoPoint.x = x;
-            volvoPoint.y = y;
-        } else {
-            scaniaPoint.x = x;
-            saabPoint.y = y;
-        }*/
     }
 
     // Initializes the panel and reads the images
@@ -82,18 +58,14 @@ public class DrawPanel extends JPanel{
     }
 
     // This method is called each time the panel updates/refreshes/repaints itself
-    // TODO: Change to suit your needs.
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         int offset = 0;
 
-        for (int i = 0; i < dC.size(); i++){
-            g.drawImage(dC.get(i).getB(),dC.get(i).getP().x,dC.get(i).getP().y+offset,null);
+        for (int i = 0; i < drawCars.size(); i++){
+            g.drawImage(drawCars.get(i).getImage(),drawCars.get(i).getPoint().x,drawCars.get(i).getPoint().y+offset,null);
             offset = offset+100;
         }
-       /* g.drawImage(volvoImage, volvoPoint.x, volvoPoint.y, null); // see javadoc for more info on the parameters
-        g.drawImage(saabImage, saabPoint.x, volvoPoint.y +100, null);
-        g.drawImage(scaniaImage, scaniaPoint.x, scaniaPoint.y +200,null);*/
     }
 }

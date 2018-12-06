@@ -3,8 +3,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import static java.lang.System.out;
-
 /*
  * This class represents the Controller part in the MVC pattern.
  * It's responsibilities is to listen to the View and responds in a appropriate manner by
@@ -54,28 +52,12 @@ public class CarController {
                 int y = (int) Math.round(car.getPosition().y);
 
                 if (x > 674){
-                    //car.stopEngine();
                     car.turnLeft();
                     car.turnLeft();
-                    //car.setPosition(new Point(640,y));
-                    //car.move();
-                    if(car.getDirection() == new int[] {-1,0}) {
-                        car.startEngine();
-                        car.gas(0.01);
-                    }
                 }else if (x < 0){
-                    //car.stopEngine();
                     car.turnLeft();
                     car.turnLeft();
-                    //car.setPosition(new Point(5,y));
-                    //car.move();
-                    if(car.getDirection() == new int[] {1,0}) {
-                        car.startEngine();
-                        car.gas(0.01);
-                    }
                 }
-                //out.println(car.getModelName());
-                //out.println(car.getCurrentSpeed());
                 frame.drawPanel.moveit(x, y, car.getModelName());
                 // repaint() calls the paintComponent method of the panel
                 frame.drawPanel.repaint();
